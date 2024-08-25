@@ -4,29 +4,40 @@ extends CharacterBody2D
 @export var acceleration = 0.1
 @export var friction = 0.0  # Set to 0 to completely remove friction
 
+@onready var animated_sprite = $AnimatedSprite2D
+
 func get_input():
 	var input = Vector2()
+	
 	if Input.is_action_pressed('right'):
 		input.x += 1
-		$AnimatedSprite2D.flip_h = false
-	if Input.is_action_pressed('left'):
+		animated_sprite.flip_h = false
+	elif Input.is_action_pressed('left'):
 		input.x -= 1
-		$AnimatedSprite2D.flip_h = true
-	if Input.is_action_pressed('down'):
+		animated_sprite.flip_h = true
+	elif Input.is_action_pressed('down'):
 		input.y += 1
-	if Input.is_action_pressed('up'):
+	elif Input.is_action_pressed('up'):
 		input.y -= 1
+	
 	return input
 
 func _physics_process(delta):
 	var direction = get_input()
+	
+	# Set the animation based on input
+	if direction.length() > 0:
+		animated_sprite.animation = "run"
+	else:
+		animated_sprite.animation = "idle"
+	
 	var target_velocity = direction.normalized() * speed
-
+	
 	if direction.length() > 0:
 		# Accelerate towards the target velocity
 		velocity = velocity.lerp(target_velocity, acceleration)
 	else:
-		# Apply friction only if you want some deceleration, otherwise, keep it zero
+		# Apply friction or stop movement
 		if friction > 0:
 			velocity = velocity.lerp(Vector2.ZERO, friction)
 		else:
