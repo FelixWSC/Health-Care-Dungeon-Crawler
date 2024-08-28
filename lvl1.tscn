@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bgtdd5t5475dx"]
 
-[ext_resource type="Texture2D" uid="uid://b0yfehq6qo6ci" path="res://2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset_1.png" id="1_2m12l"]
+[ext_resource type="Texture2D" uid="uid://b0yfehq6qo6ci" path="res://Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset_1.png" id="1_2m12l"]
 [ext_resource type="PackedScene" uid="uid://t5ibt57yt2p2" path="res://player.tscn" id="2_qhhs5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_12wv1"]
