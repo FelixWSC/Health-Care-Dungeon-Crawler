@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_2_1.png.import
-uid="uid://bhxogvn5li0wu"
-path="res://.godot/imported/priest2_v2_2_1.png-5a336571f546a7d61e58d0da23e4e2cb.ctex"
-========
-uid="uid://7yev38tdnttq"
+uid="uid://blmo2cats2vbn"
 path="res://.godot/imported/lizard_f_hit_anim_f0.png-2a87ea221fb8dfaa22b41ccdfd0f2819.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_f_hit_anim_f0.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_2_1.png.import
-source_file="res://Assets/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_2_1.png"
-dest_files=["res://.godot/imported/priest2_v2_2_1.png-5a336571f546a7d61e58d0da23e4e2cb.ctex"]
-========
 source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_f_hit_anim_f0.png"
 dest_files=["res://.godot/imported/lizard_f_hit_anim_f0.png-2a87ea221fb8dfaa22b41ccdfd0f2819.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_f_hit_anim_f0.png.import
 
 [params]
 

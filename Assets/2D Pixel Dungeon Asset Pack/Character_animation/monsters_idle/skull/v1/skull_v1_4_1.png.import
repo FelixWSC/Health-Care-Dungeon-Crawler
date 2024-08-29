@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_4_1.png.import
-uid="uid://dj4f1531ticck"
+uid="uid://ba5h6yv641c8j"
 path="res://.godot/imported/skull_v1_4_1.png-dfc6f35a45dbb13ef3ffb442e61889f5.ctex"
-========
-uid="uid://cyf7xqsgn37gf"
-path="res://.godot/imported/chest_open_4_1.png-2b90d7026dd9536d3ee31fb1ed143e68.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_4_1.png.import
 source_file="res://Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_4_1.png"
 dest_files=["res://.godot/imported/skull_v1_4_1.png-dfc6f35a45dbb13ef3ffb442e61889f5.ctex"]
-========
-source_file="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png"
-dest_files=["res://.godot/imported/chest_open_4_1.png-2b90d7026dd9536d3ee31fb1ed143e68.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png.import
 
 [params]
 

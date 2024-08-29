@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png.import
-uid="uid://cyf7xqsgn37gf"
+uid="uid://b0hxxddrofu4t"
 path="res://.godot/imported/chest_open_4_1.png-2b90d7026dd9536d3ee31fb1ed143e68.ctex"
-========
-uid="uid://v0nxlnwi517h"
-path="res://.godot/imported/elf_m_idle_anim_f2.png-80c4a0586ba2f9bd66c736f82c27151d.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/elf_m_idle_anim_f2.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png.import
 source_file="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/chest/chest_open_4_1.png"
 dest_files=["res://.godot/imported/chest_open_4_1.png-2b90d7026dd9536d3ee31fb1ed143e68.ctex"]
-========
-source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/elf_m_idle_anim_f2.png"
-dest_files=["res://.godot/imported/elf_m_idle_anim_f2.png-80c4a0586ba2f9bd66c736f82c27151d.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/elf_m_idle_anim_f2.png.import
 
 [params]
 

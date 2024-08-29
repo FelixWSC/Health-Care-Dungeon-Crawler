@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/vampire/v1/vampire_v1_4_1.png.import
-uid="uid://gjsl0uhrkrr5"
+uid="uid://cy02rwn1hgpf5"
 path="res://.godot/imported/vampire_v1_4_1.png-0f26b402b1844e390b0cb0b6548ff189.ctex"
-========
-uid="uid://byaiqc85k5lrt"
-path="res://.godot/imported/knight_f_run_anim_f3.png-8af4f63190619c162e33b00528c0c3b7.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/knight_f_run_anim_f3.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/vampire/v1/vampire_v1_4_1.png.import
 source_file="res://Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/vampire/v1/vampire_v1_4_1.png"
 dest_files=["res://.godot/imported/vampire_v1_4_1.png-0f26b402b1844e390b0cb0b6548ff189.ctex"]
-========
-source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/knight_f_run_anim_f3.png"
-dest_files=["res://.godot/imported/knight_f_run_anim_f3.png-8af4f63190619c162e33b00528c0c3b7.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/knight_f_run_anim_f3.png.import
 
 [params]
 

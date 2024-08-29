@@ -1,6 +1,7 @@
-[gd_scene load_steps=36 format=3 uid="uid://c8lui5l5mlxgk"]
+[gd_scene load_steps=37 format=3 uid="uid://c8lui5l5mlxgk"]
 
 [ext_resource type="Texture2D" uid="uid://cd4stw2ce2jm8" path="res://Assets/Zombie.png" id="1_5egui"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_md5vu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xrdi"]
 atlas = ExtResource("1_5egui")
@@ -250,10 +251,14 @@ radius = 8.0
 height = 24.0
 
 [node name="enemy" type="CharacterBody2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_md5vu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1.25)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_77r0f")
-animation = &"death"
+animation = &"idle"
 autoplay = "idle"
 offset = Vector2(2.08165e-12, -10)
 
@@ -267,3 +272,6 @@ shape = SubResource("CircleShape2D_eodxr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6)
 shape = SubResource("CapsuleShape2D_nwqe4")
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

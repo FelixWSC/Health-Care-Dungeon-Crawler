@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_3_1.png.import
-uid="uid://dy77kbw06jpv4"
-path="res://.godot/imported/skull_v1_3_1.png-5b98a19d1d457dcfb4527aed7575d860.ctex"
-========
-uid="uid://sa6v1ace5x1l"
+uid="uid://bw8dvuif3e56y"
 path="res://.godot/imported/lizard_m_run_anim_f3.png-7691037ebc78ff871503050a7910ef2f.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_m_run_anim_f3.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_3_1.png.import
-source_file="res://Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_v1_3_1.png"
-dest_files=["res://.godot/imported/skull_v1_3_1.png-5b98a19d1d457dcfb4527aed7575d860.ctex"]
-========
 source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_m_run_anim_f3.png"
 dest_files=["res://.godot/imported/lizard_m_run_anim_f3.png-7691037ebc78ff871503050a7910ef2f.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/lizard_m_run_anim_f3.png.import
 
 [params]
 

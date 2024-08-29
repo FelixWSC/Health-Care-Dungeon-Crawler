@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/mini_box_1/mini_box_1_2.png.import
-uid="uid://b0x4a2u13jybt"
+uid="uid://duyharai08h0r"
 path="res://.godot/imported/mini_box_1_2.png-68fa8befd517ebd2d743be90bd06c740.ctex"
-========
-uid="uid://db6f4kov3j4c0"
-path="res://.godot/imported/imp_run_anim_f0.png-f8d78816ec4411a27be8a440210d5731.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/imp_run_anim_f0.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/mini_box_1/mini_box_1_2.png.import
 source_file="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/mini_box_1/mini_box_1_2.png"
 dest_files=["res://.godot/imported/mini_box_1_2.png-68fa8befd517ebd2d743be90bd06c740.ctex"]
-========
-source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/imp_run_anim_f0.png"
-dest_files=["res://.godot/imported/imp_run_anim_f0.png-f8d78816ec4411a27be8a440210d5731.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/imp_run_anim_f0.png.import
 
 [params]
 

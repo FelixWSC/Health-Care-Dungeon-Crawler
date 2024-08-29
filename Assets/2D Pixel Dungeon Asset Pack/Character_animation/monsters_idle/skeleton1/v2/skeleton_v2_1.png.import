@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v2/skeleton_v2_1.png.import
-uid="uid://dkgi3gs50236q"
+uid="uid://yeb3exi8pmds"
 path="res://.godot/imported/skeleton_v2_1.png-fb536c9b0213f3cd5912d2144aa6c4a9.ctex"
-========
-uid="uid://b2rpcwppsaql8"
-path="res://.godot/imported/elf_f_hit_anim_f0.png-3acb6a347c3aeab53a6ada7d867f58fb.ctex"
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/elf_f_hit_anim_f0.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v2/skeleton_v2_1.png.import
 source_file="res://Assets/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v2/skeleton_v2_1.png"
 dest_files=["res://.godot/imported/skeleton_v2_1.png-fb536c9b0213f3cd5912d2144aa6c4a9.ctex"]
-========
-source_file="res://Assets/0x72_DungeonTilesetII_v1.7/frames/elf_f_hit_anim_f0.png"
-dest_files=["res://.godot/imported/elf_f_hit_anim_f0.png-3acb6a347c3aeab53a6ada7d867f58fb.ctex"]
->>>>>>>> d2a1ab68281a6443a5959b7ecd80ebd2cfe950df:Assets/0x72_DungeonTilesetII_v1.7/frames/elf_f_hit_anim_f0.png.import
 
 [params]
 
