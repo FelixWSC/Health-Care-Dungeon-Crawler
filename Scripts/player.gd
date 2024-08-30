@@ -1,5 +1,11 @@
 extends CharacterBody2D
 
+var enemy_inattack_range = false
+var enemy_attack_cooldown = true
+var health = 100
+var player_alive = true 
+
+
 @export var speed = 100
 @export var acceleration = 0.1
 @export var friction = 0.0  # Set to 0 to completely remove friction
@@ -45,3 +51,14 @@ func _physics_process(delta: float) -> void:
 
 	# Move the character
 	move_and_slide()
+
+
+
+func _on_player_hitbox_body_entered(body):
+	if body.has_method ("enemy"):
+		enemy_inattack_range = true 
+ 
+
+func _on_player_hitbox_body_exited(body):
+	if body.has_method ("enemy"):
+		enemy_inattack_range = false 
