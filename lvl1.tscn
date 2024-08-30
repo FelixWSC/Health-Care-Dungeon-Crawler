@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgtdd5t5475dx"]
+[gd_scene load_steps=8 format=3 uid="uid://bgtdd5t5475dx"]
 
 [ext_resource type="Texture2D" uid="uid://b0yfehq6qo6ci" path="res://Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset_1.png" id="1_2m12l"]
 [ext_resource type="PackedScene" uid="uid://t5ibt57yt2p2" path="res://player.tscn" id="2_qhhs5"]
-[ext_resource type="PackedScene" uid="uid://c8lui5l5mlxgk" path="res://enemy.tscn" id="3_64eis"]
 [ext_resource type="PackedScene" uid="uid://ckvr2vhuvhoo8" path="res://coin.tscn" id="4_67agd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_12wv1"]
@@ -226,8 +225,6 @@ position = Vector2(-117, -75)
 position = Vector2(286, 287)
 tile_set = SubResource("TileSet_n88og")
 format = 2
-
-[node name="enemy" parent="." instance=ExtResource("3_64eis")]
 
 [node name="coin" parent="." instance=ExtResource("4_67agd")]
 position = Vector2(32, -35)
