@@ -6,23 +6,23 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-func get_input():
-	var input = Vector2()
+func get_input() -> Vector2:
+	var input = Vector2.ZERO
 	
 	if Input.is_action_pressed('right'):
 		input.x += 1
 		animated_sprite.flip_h = false
-	elif Input.is_action_pressed('left'):
+	if Input.is_action_pressed('left'):
 		input.x -= 1
 		animated_sprite.flip_h = true
-	elif Input.is_action_pressed('down'):
+	if Input.is_action_pressed('down'):
 		input.y += 1
-	elif Input.is_action_pressed('up'):
+	if Input.is_action_pressed('up'):
 		input.y -= 1
 	
 	return input
 
-func _physics_process(delta):
+func _physics_process(delta: float) -> void:
 	var direction = get_input()
 	
 	# Set the animation based on input

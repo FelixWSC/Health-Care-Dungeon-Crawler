@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj0ljhfitjbcw"
-path="res://.godot/imported/square_right_4.png-76f39a6cda0b2e9b495f3a204cc6690f.ctex"
+uid="uid://cd4stw2ce2jm8"
+path="res://.godot/imported/Zombie.png-4230481d8b69ffc29ddafca14fd87919.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/2D Pixel Dungeon Asset Pack/interface/square_right_4.png"
-dest_files=["res://.godot/imported/square_right_4.png-76f39a6cda0b2e9b495f3a204cc6690f.ctex"]
+source_file="res://Assets/Zombie.png"
+dest_files=["res://.godot/imported/Zombie.png-4230481d8b69ffc29ddafca14fd87919.ctex"]
 
 [params]
 

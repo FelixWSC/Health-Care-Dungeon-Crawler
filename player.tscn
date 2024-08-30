@@ -1,8 +1,33 @@
-[gd_scene load_steps=20 format=3 uid="uid://t5ibt57yt2p2"]
+[gd_scene load_steps=27 format=3 uid="uid://t5ibt57yt2p2"]
 
 [ext_resource type="Texture2D" uid="uid://dq1mdmaiiyyxw" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="1_6yhfm"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_usprq"]
 [ext_resource type="Texture2D" uid="uid://djy05kigj8yk0" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="2_6gpge"]
+[ext_resource type="Texture2D" uid="uid://bagyxsdosls3d" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack01.png" id="2_y7m8y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4lsj"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7ar5"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os1hh"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44d6t"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2c0rg"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2j3i8"]
+atlas = ExtResource("2_y7m8y")
+region = Rect2(500, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mwfg7"]
 atlas = ExtResource("1_6yhfm")
@@ -63,6 +88,29 @@ region = Rect2(700, 0, 100, 100)
 [sub_resource type="SpriteFrames" id="SpriteFrames_24rsr"]
 animations = [{
 "frames": [{
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_p4lsj")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_r7ar5")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_os1hh")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_44d6t")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_2c0rg")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_2j3i8")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mwfg7")
 }, {
@@ -117,20 +165,20 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_erubu"]
 radius = 5.0
-height = 16.0
+height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_usprq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_24rsr")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, -8)
+position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_erubu")
 
 [node name="Camera2D2" type="Camera2D" parent="."]
