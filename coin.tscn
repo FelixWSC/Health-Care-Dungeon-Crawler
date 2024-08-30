@@ -1,0 +1,64 @@
+[gd_scene load_steps=12 format=3 uid="uid://ckvr2vhuvhoo8"]
+
+[ext_resource type="Texture2D" uid="uid://ct53bqdkpvwlg" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_1.png" id="1_32cwr"]
+[ext_resource type="Texture2D" uid="uid://c2ba6g1qdtwls" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_1_1.png" id="2_r70ah"]
+[ext_resource type="Texture2D" uid="uid://srl0hdournot" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_2.png" id="3_gdiwl"]
+[ext_resource type="Texture2D" uid="uid://bxgm0r6rgem67" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_2_1.png" id="4_nneli"]
+[ext_resource type="Texture2D" uid="uid://cee1e8hrjvexa" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_3.png" id="5_tnb40"]
+[ext_resource type="Texture2D" uid="uid://dpc3ixmcdd7na" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_3_1.png" id="6_8wmno"]
+[ext_resource type="Texture2D" uid="uid://m8h4q6nw5o01" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_4.png" id="7_y11mw"]
+[ext_resource type="Texture2D" uid="uid://csqc3n87qe47" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_4_1.png" id="8_38dbf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w0j57"]
+radius = 5.09902
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0t8v0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vu06v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_32cwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r70ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gdiwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nneli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tnb40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8wmno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y11mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_38dbf")
+}],
+"loop": true,
+"name": &"Isle",
+"speed": 7.0
+}]
+
+[node name="coin" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_w0j57")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-4, -4)
+scale = Vector2(8, 8)
+texture = SubResource("CanvasTexture_0t8v0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vu06v")
+animation = &"Isle"
+frame_progress = 0.886032
