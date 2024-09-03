@@ -108,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
-"speed": 8.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -165,7 +165,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_erubu"]
 radius = 5.0
-height = 16.0
+height = 14.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w7fst"]
 radius = 12.0416
@@ -175,14 +175,14 @@ collision_layer = 3
 script = ExtResource("1_usprq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -7)
+position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_24rsr")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.520629
+frame_progress = 0.639516
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -9)
+position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_erubu")
 
 [node name="Camera2D2" type="Camera2D" parent="."]
@@ -196,5 +196,9 @@ position = Vector2(0, -7)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
 shape = SubResource("CircleShape2D_w7fst")
 
+[node name="attack_cooldown" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
+[connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
