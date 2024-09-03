@@ -12,7 +12,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_w0j57"]
 radius = 5.09902
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_0t8v0"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_w05ar"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vu06v"]
 animations = [{
@@ -56,9 +56,9 @@ shape = SubResource("CircleShape2D_w0j57")
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 position = Vector2(-4, -4)
 scale = Vector2(8, 8)
-texture = SubResource("CanvasTexture_0t8v0")
+texture = SubResource("ViewportTexture_w05ar")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vu06v")
 animation = &"Isle"
-frame_progress = 0.886032
+frame_progress = 0.840314
