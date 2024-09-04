@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://srcfp5rcdbyl"]
+
+[ext_resource type="Texture2D" uid="uid://ct53bqdkpvwlg" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_1.png" id="1_tq0yr"]
+[ext_resource type="Texture2D" uid="uid://srl0hdournot" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_2.png" id="2_tg5mk"]
+[ext_resource type="Texture2D" uid="uid://cee1e8hrjvexa" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_3.png" id="4_x5cjg"]
+[ext_resource type="Texture2D" uid="uid://m8h4q6nw5o01" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_4.png" id="6_pw7lc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irpwk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tq0yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tg5mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x5cjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pw7lc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_irpwk")
+frame_progress = 0.168008
