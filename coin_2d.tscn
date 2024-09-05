@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://srcfp5rcdbyl"]
 
-[ext_resource type="Script" path="res://coin_2d.gd" id="1_01tf3"]
+[ext_resource type="Script" path="res://coin_2drealone.gd" id="1_n745k"]
 [ext_resource type="Texture2D" uid="uid://ct53bqdkpvwlg" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_1.png" id="1_tq0yr"]
 [ext_resource type="Texture2D" uid="uid://srl0hdournot" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_2.png" id="2_tg5mk"]
 [ext_resource type="Texture2D" uid="uid://cee1e8hrjvexa" path="res://Assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_3.png" id="4_x5cjg"]
@@ -30,13 +30,12 @@ animations = [{
 radius = 5.0
 
 [node name="Node2D" type="Area2D"]
-script = ExtResource("1_01tf3")
+script = ExtResource("1_n745k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_irpwk")
-frame_progress = 0.335251
+autoplay = "default"
+frame_progress = 0.288387
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_r0oj5")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
