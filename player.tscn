@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://t5ibt57yt2p2"]
 
 [ext_resource type="Texture2D" uid="uid://dq1mdmaiiyyxw" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="1_6yhfm"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_usprq"]
+[ext_resource type="Script" path="res://player.gd" id="1_usprq"]
 [ext_resource type="Texture2D" uid="uid://djy05kigj8yk0" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="2_6gpge"]
 [ext_resource type="Texture2D" uid="uid://bagyxsdosls3d" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack01.png" id="2_y7m8y"]
 
