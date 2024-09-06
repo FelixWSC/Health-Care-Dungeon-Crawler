@@ -29,7 +29,7 @@ func get_input() -> Vector2:
 
 	return input
 
-func _physics_process(delta: float) -> void:
+func _physics_process_delta(delta: float) -> void:
 	var direction = get_input()
 	enemy_attack()
 	attack()
