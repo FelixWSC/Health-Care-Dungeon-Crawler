@@ -380,10 +380,13 @@ autoplay = "main_idle"
 offset = Vector2(2.08165e-12, -10)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7.5)
 shape = SubResource("CapsuleShape2D_nwqe4")
 
+=======
+>>>>>>> parent of 4d4a533 (health tiny stuff)
 =======
 >>>>>>> parent of 4d4a533 (health tiny stuff)
 [node name="detection_area" type="Area2D" parent="."]
