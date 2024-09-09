@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
-var health = 160
+var health = 100
 var player_alive = true
 
 var attack_ip = false
@@ -29,7 +29,7 @@ func get_input() -> Vector2:
 
 	return input
 
-func _physics_process(delta: float) -> void:
+func _physics_process_delta(delta: float) -> void:
 	var direction = get_input()
 	enemy_attack()
 	attack()
