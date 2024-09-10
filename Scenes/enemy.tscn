@@ -1,8 +1,9 @@
-[gd_scene load_steps=54 format=3 uid="uid://c8lui5l5mlxgk"]
+[gd_scene load_steps=59 format=3 uid="uid://c8lui5l5mlxgk"]
 
 [ext_resource type="Texture2D" uid="uid://cd4stw2ce2jm8" path="res://Assets/Zombie.png" id="1_5egui"]
 [ext_resource type="Script" path="res://enemy.gd" id="1_vlvc5"]
 [ext_resource type="Texture2D" uid="uid://c38wbn5344ph8" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Idle.png" id="3_jkdkv"]
+[ext_resource type="Texture2D" uid="uid://bm1vh5sd5gnut" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Death.png" id="3_sirhv"]
 [ext_resource type="Texture2D" uid="uid://c62d6av5dh10v" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Walk.png" id="4_e5f4g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xrdi"]
@@ -96,6 +97,22 @@ region = Rect2(192, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_mcxq8"]
 atlas = ExtResource("1_5egui")
 region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp15d"]
+atlas = ExtResource("3_sirhv")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0804"]
+atlas = ExtResource("3_sirhv")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sov43"]
+atlas = ExtResource("3_sirhv")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygl5c"]
+atlas = ExtResource("3_sirhv")
+region = Rect2(300, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_32ugc"]
 atlas = ExtResource("3_jkdkv")
@@ -273,6 +290,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_tp15d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0804")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sov43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygl5c")
+}],
+"loop": true,
+"name": &"main_death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_32ugc")
 }, {
 "duration": 1.0,
@@ -375,8 +409,9 @@ script = ExtResource("1_vlvc5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 2.5)
 sprite_frames = SubResource("SpriteFrames_77r0f")
-animation = &"main_walk"
+animation = &"main_death"
 autoplay = "main_idle"
+frame_progress = 0.93907
 offset = Vector2(2.08165e-12, -10)
 
 <<<<<<< HEAD
