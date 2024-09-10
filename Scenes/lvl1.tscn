@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b0yfehq6qo6ci" path="res://Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset_1.png" id="1_ew6pl"]
 [ext_resource type="PackedScene" uid="uid://t5ibt57yt2p2" path="res://Scenes/player.tscn" id="2_88led"]
 [ext_resource type="PackedScene" uid="uid://c8lui5l5mlxgk" path="res://Scenes/enemy.tscn" id="3_16at8"]
-[ext_resource type="PackedScene" uid="uid://ckvr2vhuvhoo8" path="res://Scenes/coin.tscn" id="3_je50n"]
+[ext_resource type="PackedScene" uid="uid://srcfp5rcdbyl" path="res://coin_2d.tscn" id="3_je50n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_12wv1"]
 texture = ExtResource("1_ew6pl")
