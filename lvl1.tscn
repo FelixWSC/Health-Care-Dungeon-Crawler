@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://bgtdd5t5475dx"]
 
 [ext_resource type="Texture2D" uid="uid://b0yfehq6qo6ci" path="res://Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset_1.png" id="1_2m12l"]
-[ext_resource type="PackedScene" uid="uid://t5ibt57yt2p2" path="res://player.tscn" id="2_qhhs5"]
+[ext_resource type="PackedScene" uid="uid://ddo66xw44lgj6" path="res://player.tscn" id="2_qhhs5"]
 [ext_resource type="PackedScene" uid="uid://srcfp5rcdbyl" path="res://coin_2d.tscn" id="3_h06n8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_12wv1"]
@@ -182,6 +182,9 @@ tile_set = SubResource("TileSet_yb8dg")
 
 [node name="Player" parent="." instance=ExtResource("2_qhhs5")]
 position = Vector2(-117, -75)
+speed = null
+acceleration = null
+friction = null
 
 [node name="Node2D" parent="." instance=ExtResource("3_h06n8")]
 position = Vector2(-49, -79)
