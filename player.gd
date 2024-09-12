@@ -1,5 +1,12 @@
 extends CharacterBody2D
 
+var enemy_inattack_range = false
+var enemy_attack_cooldown = true
+var health = 100
+var player_alive = true
+
+var attack_ip = false
+
 @export var speed = 100
 @export var acceleration = 0.1
 @export var friction = 0.0  # Set to 0 to completely remove friction
@@ -8,7 +15,7 @@ extends CharacterBody2D
 
 func get_input() -> Vector2:
 	var input = Vector2.ZERO
-	
+
 	if Input.is_action_pressed('right'):
 		input.x += 1
 		animated_sprite.flip_h = false
@@ -19,20 +26,29 @@ func get_input() -> Vector2:
 		input.y += 1
 	if Input.is_action_pressed('up'):
 		input.y -= 1
-	
+
 	return input
 
 func _physics_process_delta(delta: float) -> void:
 	var direction = get_input()
-	
+	enemy_attack()
+	attack()
+
+	if health <= 0:
+		player_alive = false # You can add death or respawn screen here
+		health = 0
+		print("player has been killed")
+		self.queue_free()
+
 	# Set the animation based on input
 	if direction.length() > 0:
 		animated_sprite.animation = "run"
 	else:
-		animated_sprite.animation = "idle"
-	
+		if attack_ip == false:
+			animated_sprite.animation = "idle"
+
 	var target_velocity = direction.normalized() * speed
-	
+
 	if direction.length() > 0:
 		# Accelerate towards the target velocity
 		velocity = velocity.lerp(target_velocity, acceleration)
@@ -45,3 +61,38 @@ func _physics_process_delta(delta: float) -> void:
 
 	# Move the character
 	move_and_slide()
+
+func player():
+	pass
+
+func _on_player_hitbox_body_entered(body):
+	if body.has_method("enemy"):
+		enemy_inattack_range = true
+
+func _on_player_hitbox_body_exited(body):
+	if body.has_method("enemy"):
+		enemy_inattack_range = false
+
+func enemy_attack():
+	if enemy_inattack_range and enemy_attack_cooldown == true:
+		health = health - 20
+		enemy_attack_cooldown = false
+		$attack_cooldown.start()
+		print(health)
+
+func _on_attack_cooldown_timeout():
+	enemy_attack_cooldown = true
+
+func attack():
+	if Input.is_action_just_pressed("attack"):
+		global.player_current_attack = true
+		attack_ip = true
+		# Ensure the flip state matches the current facing direction
+		$AnimatedSprite2D.flip_h = animated_sprite.flip_h
+		$AnimatedSprite2D.play("attack")
+		$deal_attack_timer.start()
+
+func _on_deal_attack_timer_timeout():
+	$deal_attack_timer.stop()
+	global.player_current_attack = false
+	attack_ip = false
